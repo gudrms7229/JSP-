@@ -81,7 +81,7 @@
     </nav>
     <div class= "container">
     	<div= "row">
-    	    <table class= "table table-stripped" style= "text-align: center; boarder: 1px solid #dddddd">
+    	    <table class= "table table-striped" style= "text-align: center; boader: 1px solid #dddddd">
     	    	<thead>
     	    	<tr>
     	    		<th style= "background-color: #eeeeee; text-align: center;">번호</th>
@@ -99,7 +99,7 @@
     	    			%>
     	    			<tr>
     	    				<td><%= list.get(i).getBbsID() %></td>
-    	    				<td><a href ="view.jsp?bbsID= <%= list.get(i).getBbsID() %>"><%= list.get(i).getBbsTitle() %></a></td>
+    	    				<td><a href ="view.jsp?bbsID=<%= list.get(i).getBbsID() %>"><%= list.get(i).getBbsTitle() %></a></td>
     	    				<td><%= list.get(i).getUserID() %></td>
     	    				<td><%= list.get(i).getBbsDate().substring(0, 11) + list.get(i).getBbsDate().substring(11, 13) + "시" + list.get(i).getBbsDate().substring(14, 16) + "분" %></td>
     	    			</tr>	
